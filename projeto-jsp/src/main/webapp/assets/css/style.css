@@ -7593,7 +7593,7 @@ table tbody .border-bottom-info td {
   -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear; }
   .pcoded .pcoded-navbar .pcoded-navigation-label[menu-title-theme="theme1"] {
-    color: #448aff; }
+    color: #212529; }
   .pcoded .pcoded-navbar .pcoded-navigation-label[menu-title-theme="theme2"] {
     color: #b71c1c; }
   .pcoded .pcoded-navbar .pcoded-navigation-label[menu-title-theme="theme3"] {
@@ -7747,7 +7747,7 @@ table tbody .border-bottom-info td {
             transform: rotate(180deg); }
 
 body[themebg-pattern="theme1"] {
-  background-color: #448aff; }
+  background-color: #212529; }
 body[themebg-pattern="theme2"] {
   background-color: #b71c1c; }
 body[themebg-pattern="theme3"] {
@@ -8413,7 +8413,7 @@ body[themebg-pattern="theme6"] {
 .pcoded[theme-layout="vertical"][vertical-nav-type="fullpage"] .pcoded-main-container, .pcoded[theme-layout="vertical"][vnavigation-view="view3"] .pcoded-main-container {
   position: static; }
 .pcoded .pcoded-header[header-theme="theme1"] {
-  background: #448aff; }
+  background: #212529; }
   .pcoded .pcoded-header[header-theme="theme1"] .input-group-addon,
   .pcoded .pcoded-header[header-theme="theme1"] a {
     color: #fff; }
