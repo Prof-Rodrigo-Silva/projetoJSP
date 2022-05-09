@@ -1,64 +1,88 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <jsp:include page="head.jsp"></jsp:include>
 
-  <body>
-  <!-- Pre-loader start -->
-  <jsp:include page="theme-loader.jsp"></jsp:include>
-  <!-- Pre-loader end -->
-  <div id="pcoded" class="pcoded">
-      <div class="pcoded-overlay-box"></div>
-      <div class="pcoded-container navbar-wrapper">
-          
-          <jsp:include page="navbar.jsp"></jsp:include>
+<body>
+	<!-- Pre-loader start -->
+	<jsp:include page="theme-loader.jsp"></jsp:include>
+	<!-- Pre-loader end -->
+	<div id="pcoded" class="pcoded">
+		<div class="pcoded-overlay-box"></div>
+		<div class="pcoded-container navbar-wrapper">
 
-          <div class="pcoded-main-container">
-              <div class="pcoded-wrapper">
-                 
-                 <jsp:include page="navbarmainmenu.jsp"></jsp:include>
-                  
-                  <div class="pcoded-content">
-                      <!-- Page-header start -->
-                      
-                      <jsp:include page="pageheader.jsp"></jsp:include>
-                      
-                      <!-- Page-header end -->
-                        <div class="pcoded-inner-content">
-                            <!-- Main-body start -->
-                            <div class="main-body">
-                                <div class="page-wrapper">
-                                    <!-- Page-body start -->
-                                    <div class="page-body">
-                                        <div class="row">
-                                            <h1>TESTE</h1>
-                                            <form>
-                                            	<div class="form-group row">
-                                                	<label class="col-sm-2 col-form-label">Simple Input</label>
-                                                    <div class="col-sm-10">
-                                                    	<input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            
-                                        </div>
-                                    </div>
-                                    <!-- Page-body end -->
-                                </div>
-                                <div id="styleSelector"> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Warning Section Ends -->
-    
-    <jsp:include page="javascriptfile.jsp"></jsp:include>
+			<jsp:include page="navbar.jsp"></jsp:include>
+
+			<div class="pcoded-main-container">
+				<div class="pcoded-wrapper">
+
+					<jsp:include page="navbarmainmenu.jsp"></jsp:include>
+
+					<div class="pcoded-content">
+						<!-- Page-header start -->
+
+						<jsp:include page="pageheader.jsp"></jsp:include>
+
+						<!-- Page-header end -->
+						<div class="pcoded-inner-content">
+							<!-- Main-body start -->
+							<div class="main-body">
+								<div class="page-wrapper">
+									<!-- Page-body start -->
+									<div class="page-body">
+										<div class="row">
+											<div class="col-sm-12">
+												<!-- Basic Form Inputs card start -->
+												<div class="card">
+													<div class="card-block">
+														<h4 class="sub-title">Cad. Usuário</h4>
+														<form class="form-material" action="<%request.getContextPath()%>/ServletUsuarioController">
+															<div class="form-group form-default">
+																<input type="text" name="id" id="id"
+																	class="form-control" readonly="readonly"> <span
+																	class="form-bar"></span> <label class="float-label">ID</label>
+															</div>
+															<div class="form-group form-default">
+																<input type="text" name="nome" id="nome"
+																	class="form-control" required="required"> <span
+																	class="form-bar"></span> <label class="float-label">Nome</label>
+															</div>
+															<div class="form-group form-default">
+																<input type="email" name="email" id="email"
+																	class="form-control" required="required" autocomplete="off"> <span
+																	class="form-bar"></span> <label class="float-label">Email
+																	(exa@gmail.com)</label>
+															</div>
+															<div class="form-group form-default">
+																<input type="password" name="senha" id="senha"
+																	class="form-control" required="required" autocomplete="off"> <span
+																	class="form-bar"></span> <label class="float-label">Password</label>
+															</div>
+															<button class="btn btn-inverse btn-round waves-effect waves-light">Novo</button>
+															<button class="btn btn-success btn-round waves-effect waves-light">Salvar</button>
+															<button class="btn btn-danger btn-round waves-effect waves-light">Excluir</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Page-body end -->
+								</div>
+								<div id="styleSelector"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Warning Section Ends -->
+
+	<jsp:include page="javascriptfile.jsp"></jsp:include>
 </body>
 
 </html>
