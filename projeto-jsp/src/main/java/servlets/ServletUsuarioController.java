@@ -16,7 +16,7 @@ public class ServletUsuarioController extends HttpServlet {
        
    
     public ServletUsuarioController() {
-        super();
+        
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -38,8 +38,12 @@ public class ServletUsuarioController extends HttpServlet {
 		modelLogin.setLogin(login);
 		modelLogin.setSenha(senha);
 		
-		RequestDispatcher redDispatcher = request.getRequestDispatcher("principal/usuario.jsp");
-		redDispatcher.forward(request, response);
+		/*RequestDispatcher redDispatcher = request.getRequestDispatcher("principal/usuario.jsp");
+		request.setAttribute("modolLogin", modelLogin);
+		redDispatcher.forward(request, response);*/
+		
+		request.setAttribute("modolLogin", modelLogin);
+		request.getRequestDispatcher("principal/usuario.jsp").forward(request, response);
 		
 	}
 
